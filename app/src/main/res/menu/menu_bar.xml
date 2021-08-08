@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newWebsite"
+        android:title="Add New Website" />
+
+    <item
+        android:id="@+id/myWebsites"
+        android:title="My Websites" />
+</menu>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditWebsite">
+
+    <ScrollView
+        android:id="@+id/editWebsiteScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/editWebsiteLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.5">
+
+                <TextView
+                    android:id="@+id/editWebsiteTextViewMain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Edit Website"
+                    android:textColor="@color/sea_blue"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    app:srcCompat="@drawable/profile" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editUrlTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Website address (URL)"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <EditText
+                android:id="@+id/editUrlEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newwebsitefields"
+                android:ems="10"
+                android:hint="Enter Website Address\n(e.g. http://mywebsite.com)"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Website Name"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <EditText
+                android:id="@+id/editNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newwebsitefields"
+                android:ems="10"
+                android:hint="Enter website name"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editDailyHitsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily Hits"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editDailyHitsChangeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <SeekBar
+                android:id="@+id/editSeekBarDailyHits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="30" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editTotalHitsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Hits"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <EditText
+                android:id="@+id/editEditTextTotalHits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newwebsitefields"
+                android:ems="10"
+                android:hint="Enter total hits"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editTimerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+
+            <EditText
+                android:id="@+id/editTimerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newwebsitefields"
+                android:ems="10"
+                android:hint="Enter timer"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editCategoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select category"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/editSRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="categorySelect"
+                    android:text="Safe"
+                    android:textColor="@color/black">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/editARadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:onClick="categorySelect"
+                    android:text="Adult"
+                    android:textColor="@color/black">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/editPRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="categorySelect"
+                    android:text="PTP"
+                    android:textColor="@color/black">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/editWRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="categorySelect"
+                    android:text="With Sounds"
+                    android:textColor="@color/black">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/editQualityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High Quality"
+                android:textColor="@color/sea_blue"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <Switch
+                android:id="@+id/editHighQualitySwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                />
+
+            <Button
+                android:id="@+id/editButtonAddNewWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbuttons"
+                android:onClick="editWebsite"
+                android:text="Edit Website"
+                android:textSize="17sp"
+                app:backgroundTint="#3c7bcf" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
